@@ -1,0 +1,35 @@
+#formiguinha {width: 562px; background-color: #1e1e1e; border: solid 1px rgba(130,130,130,.1); margin: 35px auto;position:relative;--accent1: #1a1a1a; --accent2: #b3bdb5;}
+#formiguinha .base {padding: 35px; width: 490px; background-color: #1e1e1e;}
+#formiguinha .base .cont {padding: 20px; color: var(--accent2); text-align: justify; font: 14px Hind, sans-serif; line-height: 19px; letter-spacing: .25px; border-top: 0px solid; border: solid 1px rgba(130,130,130,.1); background-color: rgba(35,35,35,.4); margin-top: -120px; padding-top: 140px;}
+#formiguinha .base .cont f { color: var(--accent3); font-weight: bolder; }
+#formiguinha .base .cont f2 { color: var(--accent4); font-weight: bolder; }
+#formiguinha .base .cont f3 { color: var(--accent5); font-weight: bolder; }
+#formiguinha .base .cont r{color: var(--accent3); font-style: italic;}
+
+
+#formiguinha .base .top { background-color: var(--accent1); background: linear-gradient(to top left,var(--accent3),var(--accent1)); height: 200px; mix-blend-mode: lighten; padding: 20px; box-sizing: border-box; text-align: right;display: flex; align-items: center;position: relative; overflow: hidden;}
+#formiguinha .base .top h1 { margin: 0px; text-transform: uppercase; color: #f9f9f9; font: 800 65px Montserrat; line-height: 50px; letter-spacing: -5px; text-align: left;position: relative; display: flex; align-items: center;}
+#formiguinha .base .top h1 sub { position: absolute; display: block; font: bold 8px Montserrat; letter-spacing: 1px; background-color: #222222; padding: 5px; width: max-content; text-align: center;left:25px}
+#formiguinha .base .top img { position: absolute; top: 0; left: 0; filter: grayscale(1); object-fit: cover; width: 100%; height: 100%; mix-blend-mode: multiply; opacity: 0.3; }
+
+#formiguinha .base .histórico {text-transform: uppercase; background-color: #222222; height: 165px; text-align: right; position: Relative; z-index: 1; overflow: hidden; margin: -20px 20px 0px 20px; display: flex; align-items: center; padding: 20px; box-sizing: border-box; border: solid 1px rgba(130,130,130,.1);}
+#formiguinha .base .histórico .icon {height: 100px; width: 100px; background-color: rgba(33,33,33,.5); padding: 15px; border: solid 1px rgba(130,130,130,.15); border-radius: 100%; position: relative; z-index: 1; box-sizing: border-box; object-fit: cover;}
+
+#formiguinha .base .histórico .caixa { display: flex; flex-direction: column; gap: 5px; width: -webkit-fill-available; justify-content: center; align-items: flex-end; }
+#formiguinha .base .histórico label i { display: flex; align-items: center; justify-content: center; width: 20px; height: 20px; padding: 5px; background: var(--accent1); border-radius: 100%; font-size: 16px; border: solid 1px rgba(130,130,130,.15);cursor: pointer;color:#fff;}
+#formiguinha .base .histórico input:checked ~  i {    background: var(--accent3);}
+#formiguinha .base .histórico input{display:none}
+
+#formiguinha .base .histórico .caixa .cont-1 {position: absolute; left: 120px; top: 0; padding: 10px; height: 87%; box-sizing: border-box; width: 260px; text-align: left; color: #f2f2f2f2; opacity: 0; z-index: 1; margin: 10px 0px;overflow: auto;}
+#formiguinha .base .histórico input:checked ~ .cont-1 {opacity:1;z-index:2;}
+#formiguinha ::-webkit-scrollbar {background-color: transparent;width: 10px;border: solid 1px var(--cl2);}
+#formiguinha ::-webkit-scrollbar-button {display: none;background-color: var(--ce3)}
+#formiguinha ::-webkit-scrollbar-thumb { background-color: var(--accent3); border-radius: 16px; border: solid 0px var(--cl2);}
+
+.cont-1 h1 { margin: 0px; text-transform: uppercase; color: #f9f9f9; font: 800 25px Montserrat; }
+.cont-1 div { font: 100 12px Hind;line-height: 11px;text-transform:none;}
+.cont-1 ul { font: 100 12px Hind; line-height: 11px; text-transform: none; margin: 0px; padding: 0px;padding-inline-start: 10px;display: flex; flex-direction: column; gap: 5px;margin-bottom:10px;}
+.cont-1 div b { color: var(--accent3); font: 800 10px Montserrat; letter-spacing: -1px; margin-right: 2px;text-transform:uppercase;}
+.cont-1 dinheiro { display: flex; align-items: center; font: 800 12px Hind; gap: 5px; background: var(--accent1); width: fit-content; padding-right: 10px; border-radius: 20px;position:absolute;bottom:10px;height:25px;}
+.cont-1 dinheiro i { background: var(--accent3)!important; padding: 6px!important; }
+.cont-1 ul:before{content: attr(data-title);text-transform: uppercase; color: #f9f9f9; font: 800 15px Montserrat;color: var(--accent3);}
